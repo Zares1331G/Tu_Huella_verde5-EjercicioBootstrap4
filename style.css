@@ -1,0 +1,43 @@
+.bg-jumbotron {
+    background-image: url(./Img/portada.png);
+    background-position: 40%;
+    background-size: cover;
+    color: rgba(3, 104, 3, 0.596);
+    border-radius: 0%;
+        
+}
+footer{
+    
+    background-color: rgb(189, 253, 189);
+    margin: 20px 1px 10px 1px;
+    padding: 25px 15px 15px 25px;
+}
+.card-product{
+    flex: 1 200px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.iconos {
+    font-size: 30px;
+}
+.iconos2{
+    font-size: 20px;
+}
+.iconos3 {
+    font-size: 20px;
+}
+.btn{
+    border-radius: 0px;
+}
+.btn-coment{
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.us{
+    margin: 30px;
+    border-radius: 8px;
+}
+.caro{
+    height: 320px;
+}
