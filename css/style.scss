@@ -1,0 +1,53 @@
+$yellou:#fffa19;
+$green: #19ff38;
+$red:#f70909;
+
+@mixin margenes($top, $left, $bottom, $rigth) {
+    margin:$top, $left, $bottom, $rigth;
+}
+@mixin padding ($top, $left, $bottom, $rigth){
+    padding: $top, $left, $bottom, $rigth;
+}
+
+.bg-jumbotron {
+    background-image: url(../Img/portada.png);
+    background-position: 40%;
+    background-size: cover;
+    color:$green;
+    border-radius: 0%;
+        
+}
+footer{
+    
+    background-color: $red;
+    @include margenes(20px, 1px, 10px, 1px);
+    @include padding(25px, 15px, 15px, 25px);
+}
+.card-product{
+    flex: 1 200px;
+    @include margenes(0px, 5px, 30px, 0px);
+}
+
+.iconos {
+    font-size: 30px;
+}
+.iconos2{
+    font-size: 20px;
+}
+.iconos3 {
+    font-size: 20px;
+}
+.btn{
+    border-radius: 0px;
+}
+.btn-coment{
+    @include margenes(10px, 0px, 0px, 0px);
+    border-radius: 4px;
+}
+.us{
+    @include margenes(30px, 30px, 30px, 30px);
+    border-radius: 8px;
+}
+.caro{
+    height: 320px;
+}

@@ -5,16 +5,20 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Zares1331G@bitbucket.org/Zares1331G/pagina-tu-huella-verde.git"
+    "url": "https://github.com/Zares1331G/Tu_Huella_verde5-EjercicioBootstrap4"
   },
   "author": "David Leal Pelaez \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cvid Leal Pelaez",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Zares1331G/pagina-tu-huella-verde#readme",
+  "homepage": "https://github.com/Zares1331G/Tu_Huella_verde5-EjercicioBootstrap4",
   "dependencies": {
     "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
   }
 }
