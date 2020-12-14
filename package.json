@@ -5,8 +5,14 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
+    "start": "concurrently \"npm run wathc:scss\" \"npm run dev \"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css"
+    "scss": "node-sass -o css/ css",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* --out-dirt dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin nosotros.html -d dist --htmlmin -o dist/nosotros.html && usemin tarifas.html -d dist --htmlmin -o dist/tarifas.html",
+    "build": "npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -16,9 +22,17 @@
   "license": "ISC",
   "homepage": "https://github.com/Zares1331G/Tu_Huella_verde5-EjercicioBootstrap4",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "popper": "^1.0.1"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   }
 }
