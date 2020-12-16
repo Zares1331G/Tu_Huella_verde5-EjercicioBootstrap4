@@ -25,7 +25,7 @@ footer{
 }
 .card-product{
     flex: 1 200px;
-    @include margenes(0px, 5px, 30px, 0px);
+    @include margenes(0px, 10px, 30px, 10px);
 }
 
 .iconos {
